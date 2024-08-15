@@ -1,0 +1,395 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+body {
+  font-family: Open Sans;
+  display: flex; /*flex alunperin */
+  justify-content: center;
+  align-items: center;
+  
+  float: center;
+  /* height: 100vh; */
+  overflow: hidden;
+  background: url();
+  background-size: 100% 100%;
+}
+
+/* Voitto tyyli */
+
+.swal2-popup {
+  font-size: 1.6rem !important;
+  font-family: Georgia, serif;
+  float: center;
+  text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+}
+
+/*Slottiwheelin koko*/
+.mainbox {
+  position:sticky;
+  width: 800px; /*863px*/
+  height: 800px; /*863px*/
+  border-radius: 50%;
+}
+
+.sivunappulat {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 10%;
+  color: white;
+  position: absolute;
+  font-weight: bold;
+  font-size: 15px;
+  text-shadow: rgb(0, 0, 0) 2px 0 10px;
+  left: 5%;
+  border-radius: 25px;
+  border: 1px solid #d4d4d4;
+}
+
+#resetointi {
+  top: 5%;
+  height: 40%;
+  background: rgb(114, 114, 114);
+}
+
+#shottivoitto {
+  bottom: 5%;
+  height: 40%;
+  background: rgb(255, 174, 0) url(grass.jpg);/* SHOTTI */
+}
+
+
+/* TICKER */
+.mainbox:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(timantti.png) no-repeat;
+  background-size: 10%;
+  left: 45%;
+  top: -7%;
+  transform: rotate(0deg);
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 50%;
+  border: 3px solid hsl(34, 100%, 8%);
+  overflow: hidden; /*Näyttää reunat, hidden or visible */
+  /*transition: all ease-in-out 5s;*/
+  transform: rotate(0deg); /*kääntää boksin, normaalisti 90 deg */
+}
+
+span {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+}
+
+/* 1-5  BOX1*/
+
+.box1 .span1 {
+  clip-path: polygon(0 45%, 0 50%, 50% 50%);
+  background: rgb(255, 174, 0) url(grass.jpg);/* SHOTTI */
+}
+
+.box1 .span2 {
+  clip-path: polygon(0 45%, 0% 25%, 50% 50%);
+  background: rgb(255, 255, 0) url(beer.gif);
+}
+
+.box1 .span3 {
+  clip-path: polygon(0 25%, 0% 0%, 0% 0%, 50% 50%);
+  background: rgb(145, 60, 0) url(lightwood.jpeg);
+}
+
+.box1 .span4 {
+  clip-path: polygon(0% 0%, 28% 0, 50% 50%);
+  background: rgb(255, 255, 0) url(beer.gif);
+}
+
+.box1 .span5 {
+  clip-path: polygon(28% 0, 50% 0, 50% 50%);
+  background: rgb(145, 60, 0) url(lightwood.jpeg);
+}
+
+/* 6-10  BOX1*/
+
+.box1 .span6 {
+  clip-path: polygon(50% 0, 55% 0, 50% 50%);
+  background: rgb(255, 174, 0) url(grass.jpg);/* SHOTTI */
+}
+
+.box1 .span7 {
+  clip-path: polygon(55% 0, 75% 0%, 50% 50%);
+  background:  rgb(255, 255, 0) url(beer.gif);
+}
+
+.box1 .span8 {
+  clip-path: polygon(75% 0%, 100% 0%, 100% 12%, 50% 50%);
+  background: rgb(145, 60, 0) url(lightwood.jpeg);
+}
+
+.box1 .span9 {
+  clip-path: polygon(100% 12%, 100% 32%, 50% 50%);
+  background: rgb(255, 255, 0) url(beer.gif);
+}
+
+.box1 .span10 {
+  clip-path: polygon(100% 32%, 100% 50%, 50% 50%);
+  background: rgb(145, 60, 0) url(lightwood.jpeg);
+}
+
+/* 11-20 BOX2 */
+
+
+.box2 .span1 {
+  clip-path: polygon(0 45%, 0 50%, 50% 50%);
+  background: rgb(255, 174, 0) url(grass.jpg);/* SHOTTI */
+}
+
+.box2 .span2 {
+  clip-path: polygon(0 45%, 0% 25%, 50% 50%);
+  background: rgb(255, 255, 0) url(beer.gif);
+}
+
+.box2 .span3 {
+  clip-path: polygon(0 25%, 0% 0%, 0% 0%, 50% 50%);
+  background: rgb(145, 60, 0) url(lightwood.jpeg);
+}
+
+.box2 .span4 {
+  clip-path: polygon(0% 0%, 28% 0, 50% 50%);
+  background: rgb(255, 255, 0) url(beer.gif);
+}
+
+.box2 .span5 {
+  clip-path: polygon(28% 0, 50% 0, 50% 50%);
+  background: rgb(145, 60, 0) url(lightwood.jpeg);
+}
+
+.box2 .span6 {
+  clip-path: polygon(50% 0, 55% 0, 50% 50%);
+  background: rgb(255, 174, 0) url(grass.jpg);/* SHOTTI */
+}
+
+.box2 .span7 {
+  clip-path: polygon(55% 0, 75% 0%, 50% 50%);
+  background:  rgb(255, 255, 0) url(beer.gif);
+}
+
+.box2 .span8 {
+  clip-path: polygon(75% 0%, 100% 0%, 100% 12%, 50% 50%);
+  background: rgb(145, 60, 0) url(lightwood.jpeg);
+}
+
+.box2 .span9 {
+  clip-path: polygon(100% 12%, 100% 32%, 50% 50%);
+  background: rgb(255, 255, 0) url(beer.gif);
+}
+
+.box2 .span10 {
+  clip-path: polygon(100% 32%, 100% 50%, 50% 50%);
+  background: rgb(145, 60, 0) url(lightwood.jpeg);
+}
+
+.box2 {
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
+}
+
+/* BOX2 päättyy */
+
+.font {
+  font-size: 30px;
+}
+
+/* BOX 1 Tekstit */
+
+.box1 .span1 b { /*SHOTTI*/
+  position: absolute;
+  top: 43%;
+  right: 82%;
+  transform: rotate(189deg);
+}
+
+.box1 .span2 b {
+  position: absolute;
+  top: 37%;
+  right: 80%;
+  transform: rotate(-162deg);
+}
+
+.box1 .span3 b {
+  position: absolute;
+  top: 27%;
+  right: 67%;
+  transform: rotate(-146deg);
+}
+
+.box1 .span4 b {
+  position: absolute;
+  top: 18%;
+  right: 60%;
+  transform: rotate(-124deg);
+}
+
+.box1 .span5 b {
+  position: absolute;
+  top: 13%;
+  right: 46%;
+  transform: rotate(-103deg);
+}
+
+.box1 .span6 b { /*SHOTTI*/
+  position: absolute;
+  top: 15%;
+  right: 28%;
+  transform: rotate(-70deg);
+}
+
+.box1 .span7 b {
+  position: absolute;
+  top: 15%;
+  right: 28%;
+  transform: rotate(-75deg);
+}
+
+.box1 .span8 b {
+  position: absolute;
+  top: 20%;
+  right: 16%;
+  transform: rotate(-49deg);
+}
+
+.box1 .span9 b {
+  position: absolute;
+  top: 32%;
+  right: 6%;
+  transform: rotate(-26deg);
+}
+
+.box1 .span10 b { 
+  position: absolute;
+  top: 42%;
+  right: 3%;
+  transform: rotate(-8deg);
+}
+
+/*BOX2 PALKINTOTEKSTIT */
+
+.box2 .span1 b { /*SHOTTI*/
+  position: absolute;
+  top: 42%;
+  right: 82%;
+  transform: rotate(189deg);
+}
+
+.box2 .span2 b {
+  position: absolute;
+  top: 37%;
+  right: 80%;
+  transform: rotate(-162deg);
+}
+
+.box2 .span3 b {
+  position: absolute;
+  top: 27%;
+  right: 67%;
+  transform: rotate(-146deg);
+}
+
+.box2 .span4 b {
+  position: absolute;
+  top: 18%;
+  right: 60%;
+  transform: rotate(-124deg);
+}
+
+.box2 .span5 b {
+  position: absolute;
+  top: 13%;
+  right: 46%;
+  transform: rotate(-103deg);
+}
+
+
+.box2 .span6 b { /*SHOTTI*/
+  position: absolute;
+  top: 16%;
+  right: 28%;
+  transform: rotate(-71deg);
+}
+
+.box2 .span7 b {
+  position: absolute;
+  top: 15%;
+  right: 28%;
+  transform: rotate(-75deg);
+}
+
+.box2 .span8 b {
+  position: absolute;
+  top: 20%;
+  right: 16%;
+  transform: rotate(-49deg);
+}
+
+.box2 .span9 b {
+  position: absolute;
+  top: 32%;
+  right: 6%;
+  transform: rotate(-26deg);
+}
+
+.box2 .span10 b { 
+  position: absolute;
+  top: 42%;
+  right: 3%;
+  transform: rotate(-8deg);
+}
+
+/* SPIN */
+
+.spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 160px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.mainbox.animate:after {
+  animation: animateArrow 0.7s ease infinite;
+}
+
+audio {
+  display: none;
+}
+
+@keyframes animateArrow {
+  50% {
+    right: -50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainbox {
+    width: 100%;
+    height: 50%;
+  }
+}
