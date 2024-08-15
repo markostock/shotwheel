@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Shot Wheel</title>
+  </head>
+  <body>
+</div>
+<div>
+  <!--SIVUNAPPULAT-->
+  <button onClick="window.location.reload();" id="resetointi" class="sivunappulat">RESET</button>
+  <button id="shottivoitto" type="image" class="sivunappulat" onclick="shottinappula()">SHOTTI</button>
+</div>
+    <div class="mainbox" id="mainbox">
+      <div class="box" id="box">
+        <div class="box1">
+          <span class="font span1"><b></b></span> <!--SHOTTI-->
+          <span class="font span2"><b>Juo 1 🍺</b></span>
+          <span class="font span3"><b>Ei voittoa ❌</b></span>
+          <span class="font span4"><b>Juo 2 🍺🍺</b></span>
+          <span class="font span5"><b>Ei voittoa ❌</b></span>
+          <!--5-->
+          <span class="font span6"><b></b></span><!--SHOTTI-->
+          <span class="font span7"><b>Juo 3 🍺🍺🍺</b></span>
+          <span class="font span8"><b>Ei voittoa ❌</b></span>
+          <span class="font span9"><b>Juo 4 🍺🍺🍺🍺</b></span>
+          <span class="font span10"><b>Ei voittoa ❌</b></span>
+          <!--10-->
+        </div>
+        <div class="box2">
+          <span class="font span1"><b></b></span><!--SHOTTI-->
+          <span class="font span2"><b>Juo 1 🍺</b></span>
+          <span class="font span3"><b>Ei voittoa ❌</b></span>
+          <span class="font span4"><b>Juo 2 🍺🍺</b></span>
+          <span class="font span5"><b>Ei voittoa ❌</b></span>
+          <!--15-->
+          <span class="font span6"><b></b></span><!--SHOTTI-->
+          <span class="font span7"><b>Juo 3 🍺🍺🍺</b></span>
+          <span class="font span8"><b>Ei voittoa ❌</b></span>
+          <span class="font span9"><b>Juo 4 🍺🍺🍺🍺</b></span>
+          <span class="font span10"><b>Ei voittoa ❌</b></span>
+          <!--20-->
+        </div>
+      </div>
+      <input type="image" class="spin" onclick="spin()" src="./cisbet_spin.png"></input>
+    </div>
+
+
+<!--ÄÄNET-->
+
+    <audio controls="controls" id="openbeer" src="./openbeer.mp3" type="audio/mp3"></audio>
+    <audio controls="controls" id="wheel" src="./wheel.mp3" type="audio/mp3"></audio>
+    <audio controls="controls" id="eivoittoa" src="./eivoittoa.mp3" type="audio/mp3"></audio>
+    <audio controls="controls" id="perusvoitto" src="./perusvoitto.mp3" type="audio/mp3"></audio>
+
+<!--MUUT SCRIPTIT-->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--SWEET ALERT 2-->
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
